@@ -122,9 +122,6 @@ img{
 }
 
 @media screen and (max-width: 640px){
-    body{
-        min-height: 720px;
-    }
     img{
         display: none;
     }

@@ -1,164 +1,155 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 body{
-    background-color: hsl(30, 38%, 92%);
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
 }
 
-.card-layout{
-    width: 600px;
+.shadow{
+    position: absolute;
+    margin-top: 40px;
+    width: 365px;
+    height: 590px;
+    background-color: hsl(217, 50%, 10%);
+    border-radius: 10px;
+    box-shadow: hsl(216, 42%, 9%) 0px 10px 20px;
+}
+
+.container{
+    width: 340px;
+    height: 590px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.card-img{
-    width: 100%;
-}
-
-#mobile-img{
-    display: none;
-}
-
-img{
-    width: 100%;
-    height: 100%;
-}
-
-.card-info{
-    background-color: white;
-    width: 100%;
-    padding: 30px 30px;
-    display: flex;
-    flex-direction: column;
+    grid-template-rows: 1fr 1fr;
     justify-content: center;
-    gap: 25px;
+    border-radius: 10px;
+    background-color: hsl(216, 50%, 16%);
+    z-index: 5;
 }
 
-.preview{
-    font-family: 'Montserrat', sans-serif;
-    color: hsl(228, 12%, 48%);
-    font-weight: 500;
-    letter-spacing: 5px;
-    font-size: 13px;
+.image{
+    max-width: 305px;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 17px;
 }
 
-.title-header{
-    font-family: 'Fraunces', serif;
-    color: hsl(212, 21%, 14%);
-    font-weight: 700;
-    font-size: 19px;
-    padding-right: 30px;
-    line-height: 2.5rem;
+.image img{
+    max-width: 305px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.image svg {
+    display: flex;
+    position: absolute;
+    margin-top: 125px;
+    visibility: hidden;
+}
+
+.image:hover{
+    cursor: pointer;
+    background-color: hsl(178, 100%, 50%);
+}
+
+.image:hover img{
+    opacity: 0.5;
+}
+
+.image:hover svg{
+    visibility: visible;
 }
 
 .info{
-    font-family: 'Montserrat', sans-serif;
-    color: hsl(228, 12%, 48%);
-    font-weight: 500px;
-    font-size: 14px;
-    padding-right: 30px;
-    margin-right: 30px;
-    line-height: 1.5rem;
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-right: 20px;
 }
 
-.price{
-    display: flex;
-    align-items: center;
-}
-
-.price h1{
-    color: hsl(158, 36%, 37%);
-    font-family: 'Fraunces', serif;
-    padding-right: 20px;
-}
-
-.price h2{
-    color: hsl(158, 36%, 37%);
-    font-family: 'Fraunces', serif;
-    text-decoration: line-through;
-    margin-right: 30px;
-    font-size: 13px;
-}
-
-.button{
-    display: flex;
-    align-items: center;
-    align-content: center;
-}
-
-.button button{
-    width: 78%;
-    background-color: hsl(158, 36%, 37%);
+.info h1{
     color: white;
-    border: none;
-    height: 30px;
-    border-radius: 10px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.info h1:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.info p{
+    color: hsl(215, 51%, 70%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.pricetag{
     display: flex;
-    justify-content: center;
+    gap: 5px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid hsl(215, 32%, 27%);
+}
+
+svg{
+    margin-top: 23px;
+}
+
+.clock{
+    margin-top: 23px;
+    margin-left: 90px;
+}
+
+#price{
+    color: hsl(178, 100%, 50%);
+}
+
+.creator{
+    display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 25px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    gap: 3px;
+    padding-top: 10px;
 }
 
-.button img{
-    width: 15px;
-    height: 15px;
+#avatar{
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 25px;
+    margin-left: 0;
+    margin-right: 10px;
 }
 
-.button button:active{
-    background-color: hsl(158, 37%, 26%);
+.creator p{
+    margin-bottom: 22px;
 }
 
-@media screen and (max-width: 640px){
-    img{
-        display: none;
-    }
-    #mobile-img{
-        display: block;
-    }
-    .card-layout{
-        grid-template-columns: 1fr;
-        max-width: 355px;
-    }
+#name{
+    color: white;
+}
 
-    .card-info{
-        gap: 20px;
-    }
-
-    .title-header {
-        font-weight: 700;
-        font-size: 17px;
-        margin-right: 40px;
-        padding-right: 0px;
-    }
-
-    .button button{
-        width: 83%;
-    }
-
-    .button img {
-        display: block;
-        width: 15px;
-        height: 15px;
-    }
+#name:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
 }
 
 .attribution {
     position: absolute;
-    right: 10px;
-    bottom: 0.1px;
+    bottom: 5px;
+    right: 5px;
     font-size: 11px;
     text-align: center;
 }

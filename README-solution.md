@@ -1,6 +1,6 @@
-# Frontend Mentor - Product preview card component solution
+# Frontend Mentor - NFT preview card component solution
 
-This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -10,10 +10,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -22,12 +19,12 @@ This is a solution to the [Product preview card component challenge on Frontend 
 Users should be able to:
 
 - View the optimal layout depending on their device's screen size
-- See hover and focus states for interactive elements
+- See hover states for interactive elements
 
 ### Links
 
-- Solution URL: https://github.com/prtypoopers/prtypoopers.github.io
-- Live Site URL: https://prtypoopers.github.io/
+- Solution URL: https://github.com/prtypoopers/prtypoopers2.github.io
+- Live Site URL: prtypoopers2.github.io
 
 ## My process
 
@@ -36,21 +33,12 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 
 ### What I learned
 
-I learned how to apply my css learnings through this challenge and since this is my first challenge it was very exciting to make and work on.
-
-### Continued development
-
-The concepts that i needed to work on and develop more is the flex in css. I need to understand it more and make it so i can familiarize it completely.
+I learned how to use the flex property more efficiently now than before and the application of my understanding of css have deepen after i apply it through the challenge
 
 ## Author
 
-- Website - [prty_poopers]https://prtypoopers.github.io/
-- Frontend Mentor - [prtypoopers]https://www.frontendmentor.io/profile/prtypoopers
-
-## Acknowledgments
-
-I would like to thank Aur17 for the solution he made and it really helps me in parts that i don't quite get how it works.
+- Website - [prtypoopers]](prtypoopers2.github.io)
+- Frontend Mentor - [prtypoopers](https://www.frontendmentor.io/profile/prtypoopers)
